@@ -2,12 +2,15 @@
 function handleSearch(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
-          // Hide the form
-          var form = document.getElementById('main');
-          form.classList.add('hidden');
+    // Hide the form
+    var form = document.getElementById('main');
+    form.classList.add('hidden');
 
     // Get the input value
     var searchInput = document.getElementById('searchInput').value;
+
+    //run the saveSearch function
+    saveDrink(searchInput);
 
     // Make the API call
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchInput}`)
@@ -79,7 +82,43 @@ function handleSearch(event) {
         });
 }
 
+//function is pushing information into an array, info is also saved regardless of refresh
+function saveDrink(drinkSearched) {
+    var search = JSON.parse(localStorage.getItem('recentDrinks')) || [];
+
+    search.push(drinkSearched);
+    //this will pull the most recent five items if the array goes above five items
+    if(search.length > 5){
+        search = search.slice(-5);
+    }
+
+    localStorage.setItem('recentDrinks', JSON.stringify(search));
+}
+
+//adding the recent searches to page
+function recentSearch() {
+    var form = document.getElementById('main');
+    form.classList.add('hidden');
+    //reach the recentSearches div within the HTML
+    var recentSearches = document.getElementById('recentSearchList');
+    //retrieve the recent drinks array from local storage
+    var recentDrinks = JSON.parse(localStorage.getItem('recentDrinks')) || [];
+    //allows the block to display
+    document.getElementById('recentSearches').style.display = 'block';
+
+    recentDrinks.forEach(function (drinkSearched) {
+        var drinkList = document.createElement('li');
+        drinkList.textContent = drinkSearched;
+        recentSearches.appendChild(drinkList);
+
+    });
+}
+
 // Add event listener to the search button
 const searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', handleSearch);
+
+//Add event listener to recent searches button
+var recentSearchButton = document.getElementById('recentSearchButton');
+recentSearchButton.addEventListener('click', recentSearch);
 

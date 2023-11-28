@@ -59,3 +59,8 @@ div .card {
     margin: 10px;
     padding: 10px;
 }
+
+#recentSearchList li{
+    color:white;
+    background-color: gray;
+}
