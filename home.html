@@ -16,7 +16,7 @@
             <div id="links" class="navbar-menu">
                 <div class="navbar-end ">
                     <a class="navbar-item has-text-link" href="">Home</a>
-                    <a class="navbar-item has-text-link" href="">About</a>
+                    <button class="navbar-item has-text-link" href="" id="recentSearchButton">Recent Searches</button>
                 </div>
             </div>
         </nav>
@@ -30,6 +30,11 @@
             </div>
         </main>
         <div id="container" class="container"></div>
+    </div>
+
+    <div id="recentSearches" class="container is-flex is-align-items-center is-justify-content-center has-text-centered" >
+        <h1 style="display:none">Your Recent Searches</h1>
+        <ul id="recentSearchList"></ul>
     </div>
 
     <script src="./assets/js/script.js"></script>
