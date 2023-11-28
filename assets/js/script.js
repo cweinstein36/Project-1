@@ -87,6 +87,10 @@ function saveDrink(drinkSearched) {
     var search = JSON.parse(localStorage.getItem('recentDrinks')) || [];
 
     search.push(drinkSearched);
+    //this will pull the most recent five items if the array goes above five items
+    if(search.length > 5){
+        search = search.slice(-5);
+    }
 
     localStorage.setItem('recentDrinks', JSON.stringify(search));
 }
@@ -106,8 +110,8 @@ function recentSearch() {
         var drinkList = document.createElement('li');
         drinkList.textContent = drinkSearched;
         recentSearches.appendChild(drinkList);
-    });
 
+    });
 }
 
 // Add event listener to the search button
