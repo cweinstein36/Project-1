@@ -16,32 +16,22 @@ body {
     background-attachment: fixed;
 }
 
-#nav {
-    display: flex;
-    list-style: none;
-    text-align: right;
-    padding: 5px 0 5px 0;    
-  }
-
 #links a {
-    display: flex;
     font-size:25px;
     padding: 0 5px 0 5px;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgb(50, 37, 37);
+    margin-right: 20px;
 }
 
 #main {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 2%;
     height: 60vh;
 }
 
 .main-header {
-    display: flex;
     justify-content: space-between;
     padding: 60px;
 }
@@ -119,8 +109,4 @@ h4 {
 .button.is-primary {
     background-color: black;
     border-color: white;
-}
-
-.flexbox-container {
-    display: flex;
 }
