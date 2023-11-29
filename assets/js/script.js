@@ -100,26 +100,33 @@ function recentSearch() {
     event.preventDefault();
     var form = document.getElementById('main');
     form.classList.add('hidden');
-    //reach the recentSearches div within the HTML
+    // Reach the recentSearches div within the HTML
     var recentSearches = document.getElementById('recentSearchList');
-    //retrieve the recent drinks array from local storage
+    // Retrieve the recent drinks array from local storage
     var recentDrinks = JSON.parse(localStorage.getItem('recentDrinks')) || [];
-    //allows the block to display
-    document.getElementById('recentSearches').style.display = 'block';
+    // Create a card element for recent searches
+    var card = document.createElement('div');
+    card.classList.add('card');
+    card.classList.add('has-background-grey-light');
+    // Create a card title for recent searches
+    var cardTitle = document.createElement('p');
+    cardTitle.classList.add('title');
+    cardTitle.textContent = 'Your Recent Searches';
+    card.appendChild(cardTitle);
 
     recentDrinks.forEach(function (drinkSearched) {
         var drinkList = document.createElement('li');
         drinkList.textContent = drinkSearched;
-        recentSearches.appendChild(drinkList);
-
+        card.appendChild(drinkList);
     });
+
+    recentSearches.appendChild(card);
 }
 
 // Add event listener to the search button
-const searchButton = document.getElementById('searchButton');
+var searchButton = document.getElementById('searchButton');
 searchButton.addEventListener('click', handleSearch);
 
 //Add event listener to recent searches button
 var recentSearchButton = document.getElementById('recentSearchButton');
 recentSearchButton.addEventListener('click', recentSearch);
-
