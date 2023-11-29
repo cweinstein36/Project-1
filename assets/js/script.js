@@ -97,6 +97,7 @@ function saveDrink(drinkSearched) {
 
 //adding the recent searches to page
 function recentSearch() {
+    event.preventDefault();
     var form = document.getElementById('main');
     form.classList.add('hidden');
     //reach the recentSearches div within the HTML
