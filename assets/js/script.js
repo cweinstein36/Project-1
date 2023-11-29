@@ -76,18 +76,22 @@ function handleSearch(event) {
         // Make the GoogleMaps API call
         var mapUrl = "https://maps.googleapis.com/maps/api/staticmap";
         var apiKey = "AIzaSyAM2OYawouGodt4vc94bh_0d5vDnwq8Mks";
-        var location = "Orlando, Florida";
-        var zoom = 12;
+        var location = "28.510379801567414, -81.37350289387919";
+        var zoom = 15;
         var size = "600x400";
 
         var imageUrl = `${mapUrl}?center=${location}&zoom=${zoom}&size=${size}&key=${apiKey}`;
+        var mapTitle = document.createElement("p");
+        mapTitle.classList.add("title");
+        mapTitle.textContent = "At Publix Grocery and Liquor Store in Orlando, FL \n you can find everything you need!";
 
         var mapImage = document.createElement("img");
         mapImage.src = imageUrl;
 
         var mapContainer = document.getElementById("mapContainer");
-
+        mapContainer.appendChild(mapTitle);
         mapContainer.appendChild(mapImage);
+        
       } else {
         // No drinks found
         var noResults = document.createElement("div");

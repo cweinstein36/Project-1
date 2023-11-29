@@ -110,3 +110,7 @@ h4 {
     background-color: black;
     border-color: white;
 }
+
+#mapContainer {
+    width: 100%;
+}
