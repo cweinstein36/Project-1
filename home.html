@@ -6,8 +6,29 @@
     <title>Cocktail Search</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
 </head>
+
+
+
 <body>
+    <header>
+        <div class="flexbox-container">
+            <nav id="nav">
+                <div class="is-flex is-align-items-center">
+                    </div>
+                        <div id="links" class="navbar-menu">
+                            <div class="navbar-end ">
+                                <li><a href="#navbar-item has-text-link 1">Home</a></li>
+                                <li><a href="#navbar-item has-text-link 2">About</a></li>
+                                <li><a href="#navbar-item has-text-link 3">Recent Searches</a></li>
+                                <li><a href="#navbar-item has-text-link 4"></a></li>
+                            </div>
+                        </div>
+                    </div>
     <div>
         <nav id="nav" class="navbar has-background-grey-light">
             <div class="is-flex is-align-items-center">
@@ -18,24 +39,26 @@
                     <a class="navbar-item has-text-link" href="">Home</a>
                     <a class="navbar-item has-text-link" href="" id="recentSearchButton">Recent Searches</a>
                 </div>
+            </nav>
+        </div>    
+    </header> 
+        
+    <main id="main" class="container is-flex is-align-items-center is-justify-content-center has-text-centered">
+        <div class="flexbox-container">
+            <div class="WebsiteName">
+                <h4>SipAdvisor</h4>
+                    <div id="search">
+                        <form action="">
+                            <label class="label has-text-white" for="search">Enter in search below the desired cocktail</label>
+                            <input class="input" type="text" name="search" id="searchInput" placeholder="Margarita, Old Fashion, Mojito, etc. ">
+                            <button class="button is-primary" type="submit" id="searchButton">Search</button>
+                        </form>
+                    </div>
             </div>
-        </nav>
-        <main id="main" class="container is-flex is-align-items-center is-justify-content-center has-text-centered">
-            <div id="search">
-                <form action="">
-                    <label class="label has-text-white" for="search">Search For A Cocktail</label>
-                    <input class="input" type="text" name="search" id="searchInput" placeholder="Search for a cocktail">
-                    <button class="button is-primary" type="submit" id="searchButton">Search</button>
-                </form>
-            </div>
-        </main>
+        </div>
+    </main>
         <div id="container" class="container"></div>
-    </div>
-
-    <div id="recentSearches" class="container is-flex is-align-items-center is-justify-content-center has-text-centered" >
-        <h1 style="display:none">Your Recent Searches</h1>
-        <ul id="recentSearchList"></ul>
-    </div>
+    </header>
 
     <script src="./assets/js/script.js"></script>
 </body>
