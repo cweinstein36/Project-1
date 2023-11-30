@@ -6,6 +6,10 @@ This is the first project with the ucf coding bootcamp in which we will build an
 ## Usage
 This is intended to be used by legal drinking age adults to find a list of their favorite alcoholic drink and where to get the ingredients. 
 
+![Website Screenshot](assets/images/main-screenshot.png)
+![Screenshot displaying recipe and map](assets/images/display-screenshot.png)
+![Recent Searches](assets/images/recent-searches.png)
+
 ## Credits
 
 ## MIT License
