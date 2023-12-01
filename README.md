@@ -1,10 +1,10 @@
-# Create a Drink API
+# SipAdvisor
 
 ## Description
 This is the first project with the ucf coding bootcamp in which we will build an application using API's, JavaScript, CSS, and HTML that we have learned over the first few weeks in class. Our group has choosen to build an application that will use multiple API servers to pull a list of drink choices and their ingredients as well as the closest liquour store. 
 
 ## Usage
-This is intended to be used by legal drinking age adults to find a list of their favorite alcoholic drink and where to get the ingredients. 
+This is intended to be used by legal drinking age adults to find the ingridients and directions of making, and where to get the ingredients. 
 
 ![Website Screenshot](assets/images/main-screenshot.png)
 ![Screenshot displaying recipe and map](assets/images/display-screenshot.png)
