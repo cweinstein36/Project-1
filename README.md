@@ -1,10 +1,12 @@
 # SipAdvisor
 
 ## Description
-This is the first project with the ucf coding bootcamp in which we will build an application using API's, JavaScript, CSS, and HTML that we have learned over the first few weeks in class. Our group has choosen to build an application that will use multiple API servers to pull a list of drink choices and their ingredients as well as the closest liquour store. 
+This is a web application is designed to provide a list of ingredients, and making instruction alcoholic mixed drinks searched by the user. It uses 2 APIs (GoogleMaps,TheCocktailDB) to provide the information to the page.
 
 ## Usage
-This is intended to be used by legal drinking age adults to find the ingridients and directions of making, and where to get the ingredients. 
+Enter the name of the drink you would like to search. If your drink is found, ingredients, making directions, and the location of your nearest liquor store will be displayed(in development).
+
+***LIVE PAGE:***  [https://cweinstein36.github.io/SipAdvisor_API-Project/](https://cweinstein36.github.io/SipAdvisor_API-Project/)
 
 ![Website Screenshot](assets/images/main-screenshot.png)
 ![Screenshot displaying recipe and map](assets/images/display-screenshot.png)
@@ -12,17 +14,24 @@ This is intended to be used by legal drinking age adults to find the ingridients
 
 ## Credits
 
+**GoogleMaps API:** [https://developers.google.com/maps](https://developers.google.com/maps)
+**TheCocktailDB API:** [https://www.thecocktaildb.com/](https://www.thecocktaildb.com/)
+**Bulma CSS Framework:** [https://bulma.io/](https://bulma.io/)
+
+### Collaborators
+- Nicholas Weinstein 
+
+- Brandon Bloodsworth 
+
+- Dan Hengel 
+
+- Sebastian Saenz
+
 ## MIT License
 
 MIT License
 
 Copyright (c) 2023 
-
-Nicholas Weinstein
-Brandon Bosworth
-Dan Hengel 
-Sebastian Saenz
-
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
