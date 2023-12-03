@@ -114,3 +114,28 @@ h4 {
 #mapContainer {
     width: 100%;
 }
+
+/* the about us page css */
+
+h3{
+    font-size: 40px;
+    color: white;
+}
+
+div p{
+    backdrop-filter: blur(20px);
+
+}
+
+.devlop{
+    display: inline-block;
+}
+
+div a {
+    display: inline-block;
+    color: white;
+}
+
+div a:hover {
+    color:blue;
+}
