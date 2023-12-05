@@ -11,6 +11,7 @@ Enter the name of the drink you would like to search. If your drink is found, in
 ![Website Screenshot](assets/images/main-screenshot.png)
 ![Screenshot displaying recipe and map](assets/images/display-screenshot.png)
 ![Recent Searches](assets/images/recent-searches.png)
+![About us page](assets/images/about%20us%20page.png)
 
 ## Credits
 
